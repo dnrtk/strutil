@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "type": "process",
+      "command": "gcc",
+      "args": [
+        "-g",
+        "-Wall",
+        "${workspaceFolder}/main.c",
+        "${workspaceFolder}/strutil.c",
+        "-o",
+        "${fileBasenameNoExtension}"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "label": "makelldb: selected file"
+    }
+  ],
+  "version": "2.0.0"
+}
